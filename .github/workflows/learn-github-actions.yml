@@ -30,6 +30,9 @@ jobs:
   compile-latex:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
       - uses: xu-cheng/latex-action@v2
         with:
           root_file: docs/proyecto.tex
