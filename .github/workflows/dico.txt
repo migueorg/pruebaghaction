@@ -1,0 +1,11 @@
+centeroffset
+bfseries
+2.5ex
+listoftables
+issues
+Student
+Same
+but
+in
+INGENIERIA
+INFORMATICA
