@@ -16,7 +16,7 @@ jobs:
         id: lint
         with:
           root_file: docs/proyecto.tex
-          args: --check es --dict dico.txt
+          args: --check es --dict .github/workflows/dico.txt
 
       - name: Upload TeXtidote report
         uses: actions/upload-artifact@v3
