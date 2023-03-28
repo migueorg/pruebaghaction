@@ -27,4 +27,15 @@ jobs:
       - name: Throw error if linter warnings exist
         if: ${{ steps.lint.outputs.num_warnings != 0 }}
         run: 'echo "::error file=main.tex::num_warnings: ${{ steps.lint.outputs.num_warnings }}"; exit 1;'
-  #compile-latex:
+  compile-latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: xu-cheng/latex-action@v2
+        with:
+          root_file: docs/proyecto.tex
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: proyecto.pdf
