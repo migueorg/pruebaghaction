@@ -19,7 +19,7 @@ jobs:
           args: --check es
 
       - name: Upload TeXtidote report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: textidote_report
           path: report.html
