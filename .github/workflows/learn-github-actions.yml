@@ -14,9 +14,9 @@ jobs:
       - name: TeXtidote Action
         uses: ChiefGokhlayeh/textidote-action@v5.3.1
         id: lint
-          with:
-            root_file: docs/proyecto.tex
-            args: --check es
+        with:
+          root_file: docs/proyecto.tex
+          args: --check es
 
       - name: Upload TeXtidote report
         uses: actions/upload-artifact@v2
